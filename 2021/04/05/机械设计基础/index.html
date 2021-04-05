@@ -6,19 +6,21 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hello World | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  <meta name="description" content="失效 [设计准则] 受力分析  易混点：应力、强度、许用、极限  应力：实际的应力  接触疲劳应力(理论来源两个圆柱体的赫兹公式)  $\sigma_H&#x3D;Z_HZ_EZ_\epsilon Z_\beta\sqrt{\frac{2000KT(u\pm 1)}{\phi_b d^3u}}$ 弯曲疲劳应力$\sigma_F&#x3D;\frac{kF_t}{bm_n}Y_{Fa}Y_{sa}Y_\epsilon">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2021/04/05/hello-world/index.html">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://example.com/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:description" content="失效 [设计准则] 受力分析  易混点：应力、强度、许用、极限  应力：实际的应力  接触疲劳应力(理论来源两个圆柱体的赫兹公式)  $\sigma_H&#x3D;Z_HZ_EZ_\epsilon Z_\beta\sqrt{\frac{2000KT(u\pm 1)}{\phi_b d^3u}}$ 弯曲疲劳应力$\sigma_F&#x3D;\frac{kF_t}{bm_n}Y_{Fa}Y_{sa}Y_\epsilon">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2021-04-05T12:34:56.522Z">
-<meta property="article:modified_time" content="2021-04-05T14:23:54.909Z">
+<meta property="og:image" content="c:%5Cblog.deploy_git%5Cimg%5Cgs1.png">
+<meta property="article:published_time" content="2021-04-05T14:13:33.819Z">
+<meta property="article:modified_time" content="2021-04-05T15:40:19.269Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:%5Cblog.deploy_git%5Cimg%5Cgs1.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -154,40 +156,118 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hello-world" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-机械设计基础" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      Hello World
-    </h1>
-  
-
-        
-        <a href="/2021/04/05/hello-world/" class="archive-article-date">
-  	<time datetime="2021-04-05T12:34:56.522Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-05</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start">Quick Start</h2>
-<h3 id="Create-a-new-post">Create a new post</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server">Run server</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files">Generate static files</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+        <ol>
+<li><a target="_blank" rel="noopener" href="http://localhost:4000/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/">失效</a></li>
+<li>[设计准则]</li>
+<li>受力分析
+<ol>
+<li>易混点：应力、强度、许用、极限
+<ol>
+<li>应力：实际的应力
+<ol>
+<li>接触疲劳应力(理论来源两个圆柱体的赫兹公式)</li>
+<li><img src="C:%5Cblog.deploy_git%5Cimg%5Cgs1.png" alt="gs1"></li>
+<li>$\sigma_H=Z_HZ_EZ_\epsilon Z_\beta\sqrt{\frac{2000KT(u\pm 1)}{\phi_b d^3u}}$</li>
+<li>弯曲疲劳应力$\sigma_F=\frac{kF_t}{bm_n}Y_{Fa}Y_{sa}Y_\epsilon Y_{\beta}$</li>
+</ol>
+</li>
+<li>许用：允许承受的最大值
+<ol>
+<li>$[\sigma_H]=\frac{\sigma_{Hlim}}{S_{Hmin}}Z_N$($S_{Hmin}$是安全系数,$Z_N$是寿命系数)</li>
+<li>$[\sigma_F]=\frac{\sigma_{Flim}}{S_{Fmin}}Y_{ST}Y_N$($Y_{ST}$应力修正系数,$Y_N$弯曲强度寿命系数</li>
+</ol>
+</li>
+<li>强度：衡量实际与许用差距的抽象概念</li>
+<li>$\sigma_{Hlim}/\sigma_{Flim}$：某种材料的齿轮经长期的重复在和作用，不产生某种失效的极限应力</li>
+</ol>
+</li>
+<li>大小齿轮比较
+<ol>
+<li>接触疲劳应力:相同</li>
+<li>弯曲疲劳应力:小齿轮大,小齿轮$Y_{Fa}Y_{Sa}$更大</li>
+<li>接触疲劳强度:小齿轮大,因为接触应力相同,但是小齿轮的许用接触应力更大,小齿轮一般按无限寿命设计</li>
+<li>弯曲疲劳强度:$\frac{\sigma_{FP1}}{Y_{Fa1}{Y_{Sa1}}}$大,则弯曲疲劳强度大</li>
+<li>为什么小齿轮应比大齿轮硬30~50HBS
+<ol>
+<li>小齿轮应力循环次数多，在材料和热处理完全相同的情况下，更容易破坏</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>热处理方法
+<ol>
+<li>小齿轮调质，大齿轮正火</li>
+</ol>
+</li>
+<li>载荷系数
+<ol>
+<li>$K_A$</li>
+<li>$K_V$</li>
+<li>$K_\beta$</li>
+<li>$K_\alpha$</li>
+</ol>
+</li>
+<li>参数影响
+<ol>
+<li>$a$:影响接触疲劳强度</li>
+<li>$m$:影响弯曲疲劳强度</li>
+<li>$b$:小齿轮比大齿轮齿宽大
+<ol>
+<li>保证接触线长度</li>
+<li>保证啮合时对中性好,从而使小齿轮承受载荷均匀分布</li>
+</ol>
+</li>
+<li>$Z_H$节点区域系数</li>
+<li>$Z_E$弹性系数</li>
+<li>$Z_\epsilon$重合度系数</li>
+<li>$Z_\beta$</li>
+</ol>
+</li>
+<li>传动比($斜齿&gt;直齿&gt;锥齿$)
+<ol>
+<li>斜齿
+<ol>
+<li>重合度大,降低了每对齿轮的载荷,提高了齿轮的承载能力</li>
+<li>不产生根切的最少齿数少,可以承受更大的速比</li>
+</ol>
+</li>
+<li>锥齿
+<ol>
+<li>加工误差大,传动精度低,传动比较大时会产生振动和噪音</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>多级传动顺序(锥齿-斜齿-直齿)
+<ol>
+<li>如果锥齿布置在低速级,扭矩大,需要较大的模数和锥距,加工困难,制造成本高</li>
+<li>斜齿轮传动平稳,可允许更高的圆周速度,对下级影响较小.有轴向力,若放在低速级轴向力会很大</li>
+</ol>
+</li>
+<li>[[特点及应用场合]]</li>
+<li>材料(一般为锻钢)
+<ol>
+<li>齿面要硬,齿心要韧</li>
+<li>软齿轮
+<ol>
+<li>小齿轮调质,大齿轮正火</li>
+</ol>
+</li>
+<li>硬齿轮
+<ol>
+<li>淬火</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
 
       
 
@@ -267,7 +347,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/05/hello-world/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -281,15 +361,11 @@
   
 <nav id="article-nav">
   
-    <a href="/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
   
+    <a href="/2021/04/05/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
   
 </nav>
 

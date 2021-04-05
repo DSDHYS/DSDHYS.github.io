@@ -43,7 +43,7 @@
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
-			<img src="QQ图片20210405213939.jpg" class="js-avatar">
+			<img src="/img/头像.jpg" class="js-avatar">
 		</a>
 		<hgroup>
 		  <h1 class="header-author"><a href="/"></a></h1>
@@ -101,7 +101,7 @@
 	<div class="intrude-less">
 		<header id="header" class="inner">
 			<div class="profilepic">
-				<img src="QQ图片20210405213939.jpg" class="js-avatar">
+				<img src="/img/头像.jpg" class="js-avatar">
 			</div>
 			<hgroup>
 			  <h1 class="header-author js-header-author"></h1>
@@ -152,6 +152,160 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-机械设计基础" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li><a target="_blank" rel="noopener" href="http://localhost:4000/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/">失效</a></li>
+<li>[设计准则]</li>
+<li>受力分析
+<ol>
+<li>易混点：应力、强度、许用、极限
+<ol>
+<li>应力：实际的应力
+<ol>
+<li>接触疲劳应力(理论来源两个圆柱体的赫兹公式)</li>
+<li><img src="C:%5Cblog.deploy_git%5Cimg%5Cgs1.png" alt="gs1"></li>
+<li>$\sigma_H=Z_HZ_EZ_\epsilon Z_\beta\sqrt{\frac{2000KT(u\pm 1)}{\phi_b d^3u}}$</li>
+<li>弯曲疲劳应力$\sigma_F=\frac{kF_t}{bm_n}Y_{Fa}Y_{sa}Y_\epsilon Y_{\beta}$</li>
+</ol>
+</li>
+<li>许用：允许承受的最大值
+<ol>
+<li>$[\sigma_H]=\frac{\sigma_{Hlim}}{S_{Hmin}}Z_N$($S_{Hmin}$是安全系数,$Z_N$是寿命系数)</li>
+<li>$[\sigma_F]=\frac{\sigma_{Flim}}{S_{Fmin}}Y_{ST}Y_N$($Y_{ST}$应力修正系数,$Y_N$弯曲强度寿命系数</li>
+</ol>
+</li>
+<li>强度：衡量实际与许用差距的抽象概念</li>
+<li>$\sigma_{Hlim}/\sigma_{Flim}$：某种材料的齿轮经长期的重复在和作用，不产生某种失效的极限应力</li>
+</ol>
+</li>
+<li>大小齿轮比较
+<ol>
+<li>接触疲劳应力:相同</li>
+<li>弯曲疲劳应力:小齿轮大,小齿轮$Y_{Fa}Y_{Sa}$更大</li>
+<li>接触疲劳强度:小齿轮大,因为接触应力相同,但是小齿轮的许用接触应力更大,小齿轮一般按无限寿命设计</li>
+<li>弯曲疲劳强度:$\frac{\sigma_{FP1}}{Y_{Fa1}{Y_{Sa1}}}$大,则弯曲疲劳强度大</li>
+<li>为什么小齿轮应比大齿轮硬30~50HBS
+<ol>
+<li>小齿轮应力循环次数多，在材料和热处理完全相同的情况下，更容易破坏</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>热处理方法
+<ol>
+<li>小齿轮调质，大齿轮正火</li>
+</ol>
+</li>
+<li>载荷系数
+<ol>
+<li>$K_A$</li>
+<li>$K_V$</li>
+<li>$K_\beta$</li>
+<li>$K_\alpha$</li>
+</ol>
+</li>
+<li>参数影响
+<ol>
+<li>$a$:影响接触疲劳强度</li>
+<li>$m$:影响弯曲疲劳强度</li>
+<li>$b$:小齿轮比大齿轮齿宽大
+<ol>
+<li>保证接触线长度</li>
+<li>保证啮合时对中性好,从而使小齿轮承受载荷均匀分布</li>
+</ol>
+</li>
+<li>$Z_H$节点区域系数</li>
+<li>$Z_E$弹性系数</li>
+<li>$Z_\epsilon$重合度系数</li>
+<li>$Z_\beta$</li>
+</ol>
+</li>
+<li>传动比($斜齿&gt;直齿&gt;锥齿$)
+<ol>
+<li>斜齿
+<ol>
+<li>重合度大,降低了每对齿轮的载荷,提高了齿轮的承载能力</li>
+<li>不产生根切的最少齿数少,可以承受更大的速比</li>
+</ol>
+</li>
+<li>锥齿
+<ol>
+<li>加工误差大,传动精度低,传动比较大时会产生振动和噪音</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>多级传动顺序(锥齿-斜齿-直齿)
+<ol>
+<li>如果锥齿布置在低速级,扭矩大,需要较大的模数和锥距,加工困难,制造成本高</li>
+<li>斜齿轮传动平稳,可允许更高的圆周速度,对下级影响较小.有轴向力,若放在低速级轴向力会很大</li>
+</ol>
+</li>
+<li>[[特点及应用场合]]</li>
+<li>材料(一般为锻钢)
+<ol>
+<li>齿面要硬,齿心要韧</li>
+<li>软齿轮
+<ol>
+<li>小齿轮调质,大齿轮正火</li>
+</ol>
+</li>
+<li>硬齿轮
+<ol>
+<li>淬火</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -173,17 +327,18 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
+<h2 id="Quick-Start">Quick Start</h2>
+<h3 id="Create-a-new-post">Create a new post</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
+<h3 id="Run-server">Run server</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
+<h3 id="Generate-static-files">Generate static files</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
+<h3 id="Deploy-to-remote-sites">Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       
@@ -368,7 +523,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://localhost:4000/2021/04/05/%E6%9C%BA%E6%A2%B0%E8%AE%BE%E8%AE%A1%E5%9F%BA%E7%A1%80/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>机械设计基础</a>
             </li>
           
             <li class="search-li">
